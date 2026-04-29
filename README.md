@@ -1,71 +1,66 @@
-# Hi, I'm Guichengbin
+# Guichengbin
 
-I am a graduate student in Integrated Circuit Engineering at East China Normal University, with a background in Electronic Information Engineering. My work sits between AI, compiler performance analysis, embedded systems, and fast product prototyping.
+Graduate student in Integrated Circuit Engineering at East China Normal University. I work around compiler performance, game/workload benchmarking, embedded systems, and AI-assisted engineering workflows.
 
-I enjoy building things that can be tested in the real world: profiling workflows that make performance questions measurable, embedded systems that connect hardware and software, and AI-assisted product ideas that can become working demos quickly.
+I like projects where the result can be measured: a faster frame-time trace, a reproducible benchmark run, a cleaner profiling pipeline, or a hardware prototype that actually moves.
 
-## Focus
+## What I Am Working On
 
-- AI products and practical AI-assisted workflows
-- Compiler, benchmark, and system performance analysis
-- Embedded systems with STM32, ARM, FPGA, sensors, and visual recognition
-- Hardware-software prototypes for hackathon-style product validation
+- Compiler and runtime performance analysis
+- Game and benchmark profiling on real workloads
+- AI-assisted tools for engineering diagnosis and report generation
+- Embedded systems, visual tracking, and hardware-software prototypes
 
 ## Experience
 
 ### Intel, Compiler and AI Engineer Intern
 
-Worked on SPEC CPU2017 performance analysis and profiling workflow integration.
+Worked on SPEC CPU2017 performance analysis, profiling automation, and game compatibility validation.
 
-- Analyzed benchmark behavior across configs, threads/copies, and affinity settings.
-- Integrated VTune, perf, and PinTool into the profpin framework.
-- Supported automated collection of IPC, RSS, bandwidth, memory access, and opcode mix metrics.
-- Produced reusable scripts and documentation, with related work reused for SPEC CPU2026 research.
+- Analyzed SPEC CPU2017 benchmark behavior across configs, threads/copies, and affinity settings.
+- Integrated VTune, perf, and PinTool into a profpin-based workflow for collecting IPC, RSS, bandwidth, memory access, and opcode-mix metrics.
+- Produced reusable scripts and process documentation, with related work reused for SPEC CPU2026 research.
+- Validated Intel APO-related game scenarios, collected logs, organized defects, and supported reproduction/regression checks.
 
-Also participated in Open Lab game compatibility validation for Intel APO-related scenarios.
+## Selected Projects
 
-- Tested the impact of optimization features on game compatibility and stability.
-- Collected logs, organized defect information, and supported reproduction/regression validation.
+### Unity BossRoom Compiler Replacement and GameAssembly.dll Benchmarking
 
-## Projects
+Rebuilt Unity's BossRoom demo workflow to compare MSVC and Intel compiler outputs in a real game-like workload.
 
-### SPEC CPU2017 Performance Analysis and Profiling Workflow
+- Pulled and studied the Unity BossRoom sample, then broke down its build/runtime structure around IL2CPP and native binary generation.
+- Replaced the MSVC compiler path with the Intel compiler for the native build stage.
+- Swapped the final `GameAssembly.dll` and used CapFrameX to compare runtime performance.
+- Observed a small but measurable performance gain, using frame-time/FPS data rather than subjective gameplay impressions.
 
-Built a reusable profiling process around SPEC CPU2017 and system-level performance metrics. This project trained me to turn ambiguous performance issues into measurable, reproducible engineering questions.
+### SPEC CPU2017 Profiling Workflow
 
-### Tunable Laser Driver Circuit
+Built a reusable profiling process around SPEC CPU2017 during my Intel internship.
 
-Lab research project based on STM32G431.
-
-- Built an embedded development platform and verified PC-side communication.
-- Investigated USB/serial connection, clock configuration, and interface compatibility issues.
-- Researched a digital Buck-Boost control path covering PD/QC negotiation, power topology, ADC sampling, PI control, HRPWM driving, and mode switching.
+- Compared benchmark behavior under different configs, thread/copy counts, and affinity settings.
+- Automated metric collection with VTune, perf, and PinTool.
+- Turned profiling results into reproducible analysis notes and scripts for future benchmark work.
 
 ### Moving Target Control and Auto-Tracking System
 
-Shanghai municipal research project and electronic design competition project.
+Led an OpenMV + gimbal tracking system for an electronic design competition.
 
-- Designed an OpenMV + gimbal automatic target tracking system.
+- Built the image recognition and control pipeline, including color/shape/edge detection, MCU communication, and target tracking logic.
 - Achieved 95% line-following accuracy and completed target tracking within 1 second after recognition.
-- Led image recognition and control algorithm development, including color, shape, edge detection, communication protocol design, and MCU-side parsing.
-- Won the National Second Prize in the National Undergraduate Electronics Design Contest and the TI Cup Shanghai First Prize.
+- Won National Second Prize in the National Undergraduate Electronics Design Contest and Shanghai First Prize in the TI Cup.
 
-## Skills
+## Technical Stack
 
 - Languages: C, Python
-- Systems: Linux, performance profiling, benchmark analysis
-- Embedded: STM32, ARM, FPGA
-- Tools: VTune, perf, PinTool, Multisim, Proteus, MATLAB, SPSS
-- Interests: AI agents, AI hardware, product prototyping, hackathons
+- Performance: VTune, perf, PinTool, SPEC CPU2017, CapFrameX
+- Game/runtime: Unity, IL2CPP, `GameAssembly.dll`, MSVC, Intel compiler
+- Embedded: STM32, ARM, FPGA, OpenMV
+- Tools: Linux, MATLAB, Multisim, Proteus
 
-## Awards
+## Education
 
-- National Undergraduate Electronics Design Contest, National Second Prize
-- TI Cup National Undergraduate Electronics Design Contest, Shanghai First Prize
-- Contemporary Undergraduate Mathematical Contest in Modeling, Shanghai Third Prize
-- China International College Students' Innovation Competition, University Silver Prize
-- Shanghai Normal University Professional Scholarship, top 5% for four consecutive years
-- East China Normal University Professional Scholarship
+- M.Eng. in Integrated Circuit Engineering, East China Normal University
+- B.Eng. in Electronic Information Engineering, Shanghai Normal University
 
 ## Contact
 
